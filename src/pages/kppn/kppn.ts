@@ -12,7 +12,7 @@ import { DetailkppnPage } from '../detailkppn/detailkppn';
 })
 export class KppnPage implements OnInit {
 
-  listKPPN: any[];
+  listKPPN: any;
 
   constructor(public navCtrl: NavController, private kppnservice: KppnService) {
 
