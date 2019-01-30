@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        KPPN
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-list>
+      <ion-item *ngFor="let kppn of listKPPN">
+        <h2>{{kppn.KDKPPN}} {{kppn.NMKPPN}}</h2>
+        <p>
+          <ion-icon name="thumbs-up">{{kppn.TIPEKPPN}}</ion-icon>
+          <ion-icon name="thumbs-up">{{kppn.KOTAKPPN}}</ion-icon>
+        </p>
+        <button ion-button clear item-end (click)="viewKPPN(kppn)">View</button>
+      </ion-item>
+    </ion-list>
+  
+  </ion-content>
+  
